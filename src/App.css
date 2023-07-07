@@ -1,0 +1,226 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #fff;
+    color: #222;
+    font-weight: 300;
+}
+.wrapper {
+    max-width: 1280px;
+    margin: 50px auto;
+}
+header {
+    position: relative;
+}
+header .logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header .presentation {
+    margin: 50px 0;
+    background: url("https://img.freepik.com/free-photo/blue-armchair-against-blue-wall-in-living-room-interior-elegant-interior-design-with-copy-space-ai-generative_123827-23717.jpg?w=1380&t=st=1687540288~exp=1687540888~hmac=87231666b350acb0048a25e97a075e573cc53571b03e3dbe33f7a31a94d8d1a1")
+        no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #fff;
+    position: relative;
+}
+
+header .presentation::after {
+    content: "Найкращі товари для вашого дому";
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+header .presentation::before {
+    content: "За найнижчою ціною";
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+.nav li:hover {
+    opacity: 0.5;
+}
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.itemBox {
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #00000012;
+    margin: 20px;
+    overflow: hidden;
+}
+.itemBox img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 500ms ease;
+    opacity: 0.8;
+}
+
+.itemBox > img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.btn {
+    color: #fff;
+    width: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f34444;
+    border: none;
+    height: 40px;
+    border-radius: 3px;
+    transition: 500ms ease;
+    border: 2px solid transparent;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #f34444;
+    border: 2px solid #f34444;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-shopp {
+    text-decoration: none;
+    color: #222;
+    transition: 500ms ease;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+
+.fa-shopp:hover {
+    display: block;
+    color: red;
+}
+.active {
+    display: block;
+    transform: scale(1.1);
+    color: red;
+}
+.shop-cart {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 500px;
+    min-height: 100px;
+    background: #fafafa;
+    z-index: 1000;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.shop-cart img {
+    width: 5%;
+}
+.cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+.cartItem > button {
+    width: 50px;
+}
+.basket-box img {
+    width: 100%;
+}
+.inner-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #222222b9;
+    z-index: 9999;
+}
+.modal-wrapper div {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+.modal-wrapper div img {
+    width: 60%;
+}
+.modal-closed {
+    color: #f34444;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.basket-btn-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.basket-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 400px;
+    text-align: center;
+    border: 2px solid #00000012;
+    padding: 10px;
+    border-radius: 10px;
+}
